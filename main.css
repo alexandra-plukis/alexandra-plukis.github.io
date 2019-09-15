@@ -78,18 +78,45 @@ a:hover {
 }
 
 .about {
-    /* border-style: solid;
-    border-width: 5px; */
     justify-content: center;
-    min-height: 450px;
+    min-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    /* border-color: #e6f5f5; */
     font-size: 17px;
     background-color: #e6f5f5;
-    box-shadow: 10px 10px #FFE1A8;
-    line-height: 26pt;
+    box-shadow: 15px 15px #FFE1A8;
+    line-height: 30pt;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.aboutimg {
+    box-shadow: 15px 15px #E26D5C;
+}
+
+.about img {
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2 {
+    display: grid;
+    justify-content: left;
+    line-height: 20px;
+}
+
+.about a {
+    color: #2e2e2e;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.about a:hover {
+    color: #FFE1A8;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -108,14 +135,14 @@ a:hover {
 /* Left column */
 .columnl {
     float: left;
-    width: 63%;
+    width: 53%;
     border-radius: 30px;
     margin-left: 2%;
 }
 .columnr
 {
     float: right;
-    width: 30%;
+    width: 40%;
     margin-right: 2%;
 }
 
@@ -144,23 +171,46 @@ a:hover {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .columnl, .columnr {
-    width: 100%;
+    width: 97%;
     padding: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
   .columnl {
-    margin-left: 0px;
+    margin-left: 1.5%;
+    margin-top: 20px;
     animation-duration: 0s;
   }
   .columnr {
-    margin-right: 0px;
+    margin-right: 1.5%;
+    margin-top: 20px;
     animation-duration: 0s;
   }
-  .intro
-  {
+  .intro {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .columnl, .columnr {
+    width: 97%;
+    padding: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .columnl {
+    margin-left: 1.5%;
+    margin-top: 20px;
+    animation-duration: 0s;
+  }
+  .columnr {
+    margin-right: 1.5%;
+    margin-top: 20px;
+    animation-duration: 0s;
+  }
+  .intro {
     width: 90%;
   }
 }
