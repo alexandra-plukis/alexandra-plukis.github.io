@@ -1,0 +1,167 @@
+
+:root {
+  --accent_color: #7FB285;
+  --project_color: #FFE1A8;
+  --dark_gray: #424242;
+  --light_gray: #999999
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #424242;
+}
+
+footer.p {
+    font-size: 10px;
+}
+
+
+.intro {
+    border-radius: 15px;
+    background-color: #e6f5f5;
+    box-shadow: 15px 15px #E26D5C;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    justify-content: center;
+    line-height: 26pt;
+    font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.line-in-middle {
+    background: linear-gradient(#C9CBA3, #C9CBA3) no-repeat center/10px 100%;
+	}
+
+.spacer {
+    height: 30px;
+}
+
+.timeline {
+    height: 200%;
+}
+
+.timeline_label {
+    background-color: #C9CBA3;
+    height: 10px;
+    text-align: center;
+    max-width: 150px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    background-color: #FEFEFF;
+}
+
+a {
+  color: #424242;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FEFEFF;
+}
+
+.project {
+    justify-content: center;
+    min-height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    font-size: 17px;
+    background-color: #e6f5f5;
+    box-shadow: 15px 15px #FFE1A8;
+    line-height: 26pt;
+}
+
+.project h4 {
+    color: #E26D5C;
+}
+
+.project h3 {
+    color: #E26D5C;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymovel {
+  from {margin-left: 0%;}
+  to {margin-left: 40%;}
+}
+
+@-webkit-keyframes mymover {
+  from {margin-right: 0%;}
+  to {margin-right: 40%;}
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.timeline_l {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 40%;
+    animation-name: mymovel;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.timeline_r
+{
+    float: right;
+    width: 50%;
+    margin-top: 30px;
+    margin-right: 40%;
+    animation-name: mymover;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: var(--accent_color);
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 900px) {
+  .timeline_l, .timeline_r {
+    width: 93%;
+    margin: 0px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .timeline_l {
+    animation-duration: 0s;
+  }
+  .timeline_r {
+    animation-duration: 0s;
+  }
+  .intro
+  {
+    width: 90%;
+  }
+}

@@ -1,0 +1,166 @@
+
+:root {
+  --accent_color: #7FB285;
+  --project_color: #FFE1A8;
+  --dark_gray: #424242;
+  --light_gray: #999999
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #424242;
+}
+
+footer.p {
+    font-size: 10px;
+}
+
+
+.intro {
+    border-radius: 15px;
+    background-color: #e6f5f5;
+    box-shadow: 10px 10px #E26D5C;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    justify-content: center;
+    line-height: 26pt;
+    font-size: 15px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.spacer {
+    height: 30px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    background-color: #FEFEFF;
+}
+
+/* Header/Blog Title */
+.header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: left;
+    background: var(--accent_color);
+    font-size: 16px;
+    line-height: 20pt;
+}
+
+.header h1, h2, h3, h4 {
+    display: inline;
+}
+
+.header h1 {
+    color: #FFE1A8;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFE1A8;
+}
+
+.about {
+    /* border-style: solid;
+    border-width: 5px; */
+    justify-content: center;
+    min-height: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    /* border-color: #e6f5f5; */
+    font-size: 17px;
+    background-color: #e6f5f5;
+    box-shadow: 10px 10px #FFE1A8;
+    line-height: 26pt;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymovel {
+  from {margin-left: 0%;}
+  to {margin-left: 40%;}
+}
+
+@-webkit-keyframes mymover {
+  from {margin-right: 0%;}
+  to {margin-right: 40%;}
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.columnl {
+    float: left;
+    width: 63%;
+    border-radius: 30px;
+    margin-left: 2%;
+}
+.columnr
+{
+    float: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: var(--accent_color);
+    margin-top: 20px;
+}
+
+.footer a {
+  color: var(--dark_gray);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #FFFFFF;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 768px) {
+  .columnl, .columnr {
+    width: 100%;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .columnl {
+    margin-left: 0px;
+    animation-duration: 0s;
+  }
+  .columnr {
+    margin-right: 0px;
+    animation-duration: 0s;
+  }
+  .intro
+  {
+    width: 90%;
+  }
+}
