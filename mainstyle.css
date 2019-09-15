@@ -1,0 +1,162 @@
+
+:root {
+  --accent_color: #E26D5C;
+  --project_color: #FFE1A8;
+  --dark_gray: #424242;
+  --light_gray: #999999
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #424242;
+}
+
+footer.p {
+    font-size: 10px;
+}
+
+
+.intro {
+    border-radius: 15px;
+    background-color: #e6f5f5;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.line-in-middle {
+    background: linear-gradient(#C9CBA3, #C9CBA3) no-repeat center/10px 100%;
+	}
+
+.spacer {
+    height: 30px;
+}
+
+.timeline {
+    height: 200%;
+}
+
+.timeline_label {
+    background-color: #C9CBA3;
+    height: 10px;
+    text-align: center;
+    max-width: 150px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    background-color: #FEFEFF;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: var(--accent_color);
+    font-size: 15px;
+}
+
+a {
+  color: #424242;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FEFEFF;
+}
+
+.project {
+    /* border-style: solid;
+    border-width: 5px; */
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    /* border-color: #e6f5f5; */
+    font-size: 17px;
+    background-color: #e6f5f5;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymovel {
+  from {margin-left: 0%;}
+  to {margin-left: 10%;}
+}
+
+@-webkit-keyframes mymover {
+  from {margin-right: 0%;}
+  to {margin-right: 10%;}
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.columnl {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10%;
+    animation-name: mymovel;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.columnr
+{
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10%;
+    animation-name: mymover;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: var(--accent_color);
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .columnl, .columnr {
+    width: 100%;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .columnl {
+    margin-left: 0px;
+    animation-duration: 0s;
+  }
+  .columnr {
+    margin-right: 0px;
+    animation-duration: 0s;
+  }
+  .intro
+  {
+    width: 90%;
+  }
+}
