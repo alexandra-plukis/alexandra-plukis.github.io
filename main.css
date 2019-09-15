@@ -193,25 +193,3 @@ a:hover {
     width: 90%;
   }
 }
-
-@media only screen and (max-width: 480px) {
-  .columnl, .columnr {
-    width: 97%;
-    padding: 0px;
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-  .columnl {
-    margin-left: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
-  }
-  .columnr {
-    margin-right: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
-  }
-  .intro {
-    width: 90%;
-  }
-}
