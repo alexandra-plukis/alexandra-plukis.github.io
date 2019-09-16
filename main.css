@@ -14,26 +14,6 @@ footer.p {
     font-size: 10px;
 }
 
-
-.intro {
-    border-radius: 15px;
-    background-color: #e6f5f5;
-    box-shadow: 10px 10px #E26D5C;
-
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    justify-content: center;
-    line-height: 26pt;
-    font-size: 15px;
-}
-
-
 * {
   box-sizing: border-box;
 }
@@ -51,13 +31,18 @@ body {
 
 /* Header/Blog Title */
 .header {
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: left;
     background: var(--accent_color);
     font-size: 16px;
     line-height: 20pt;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 105%;
+    margin-left: -20px;
 }
 
 .header h1, h2, h3, h4 {
@@ -77,6 +62,10 @@ a:hover {
   color: #FFE1A8;
 }
 
+.main_home {
+    margin-top: 60px;
+}
+
 .about {
     justify-content: center;
     min-height: 50px;
@@ -90,6 +79,7 @@ a:hover {
     line-height: 30pt;
     margin-bottom: 20px;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .aboutimg {
@@ -110,13 +100,13 @@ a:hover {
 
 .about a {
     color: #2e2e2e;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
 }
 
 .about a:hover {
     color: #FFE1A8;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
 }
 

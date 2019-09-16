@@ -33,6 +33,14 @@ footer.p {
     font-size: 15px;
 }
 
+.intro a {
+    color: var(--dark_gray);
+}
+
+.intro a:hover {
+    color: #FFE1A8;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -64,6 +72,10 @@ body {
     background-color: #FEFEFF;
 }
 
+.main_resume {
+    margin-top: 80px;
+}
+
 a {
   color: #424242;
   text-decoration: none;
@@ -83,6 +95,18 @@ a:hover {
     background-color: #e6f5f5;
     box-shadow: 15px 15px #FFE1A8;
     line-height: 26pt;
+}
+
+.project a {
+    color: #2e2e2e;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #FFE1A8;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .project h4 {
