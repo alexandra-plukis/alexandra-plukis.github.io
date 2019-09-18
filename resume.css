@@ -3,22 +3,18 @@
   --accent_color: #7FB285;
   --project_color: #FFE1A8;
   --dark_gray: #424242;
-  --light_gray: #999999
+  --light_gray: #999999;
+  --dark_red: #E26D5C;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color: #424242;
+    color: var(--dark_grey);
 }
-
-footer.p {
-    font-size: 10px;
-}
-
 
 .intro {
     border-radius: 15px;
     background-color: #e6f5f5;
-    box-shadow: 15px 15px #E26D5C;
+    box-shadow: 15px 15px var(--dark_red);
 
     padding: 10px;
     padding-left: 20px;
@@ -38,7 +34,7 @@ footer.p {
 }
 
 .intro a:hover {
-    color: #FFE1A8;
+    color: var(--dark_red);
 }
 
 * {
@@ -77,7 +73,7 @@ body {
 }
 
 a {
-  color: #424242;
+  color: var(--dark_grey);
   text-decoration: none;
 }
 
@@ -86,6 +82,18 @@ a:hover {
 }
 
 .project {
+    justify-content: center;
+    min-height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    font-size: 17px;
+    background-color: #e6f5f5;
+    box-shadow: 15px 15px #f18805;
+    line-height: 26pt;
+}
+
+.job {
     justify-content: center;
     min-height: 150px;
     padding-left: 20px;
@@ -104,17 +112,17 @@ a:hover {
 }
 
 .project a:hover {
-    color: #FFE1A8;
+    color: var(--dark_red);
     font-weight: 700;
     text-decoration: none;
 }
 
 .project h4 {
-    color: #E26D5C;
+    color: var(--dark_red);
 }
 
 .project h3 {
-    color: #E26D5C;
+    color: var(--dark_red);
 }
 
 /* Safari 4.0 - 8.0 */
@@ -158,13 +166,6 @@ a:hover {
   clear: both;
 }
 
-/* Footer */
-.footer {
-    padding: 1px;
-    text-align: center;
-    background: var(--accent_color);
-    margin-top: 20px;
-}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 900px) {
