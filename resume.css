@@ -116,14 +116,25 @@ a:hover {
     font-weight: 700;
     text-decoration: none;
 }
+.job a {
+    color: #2e2e2e;
+    font-weight: 700;
+    text-decoration: none;
+}
 
-.project h4 {
+.job a:hover {
+    color: var(--dark_red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* .project h4 {
     color: var(--dark_red);
 }
 
 .project h3 {
     color: var(--dark_red);
-}
+} */
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymovel {
