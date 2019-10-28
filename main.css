@@ -26,7 +26,7 @@ footer.p {
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 5px;
-    background-color: #FEFEFF;
+    background-color: #FFFFFF /*#FEFEFF;*/
 }
 
 /* Header/Blog Title */
@@ -36,7 +36,7 @@ body {
     padding-left: 15px;
     text-align: left;
     background: var(--accent_color);
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 20pt;
     position: fixed;
     top: 0px;
