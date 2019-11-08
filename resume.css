@@ -1,10 +1,12 @@
 
 :root {
-  --accent_color: #7FB285;
-  --project_color: #FFE1A8;
+  --green: #45523a;
+  --light_orange: #fff5e3;
   --dark_gray: #424242;
   --light_gray: #999999;
-  --dark_red: #E26D5C;
+  --rich_blue: #487fa1;
+  --light_blue: #A4B5BF;
+  --light_green: #C9CBA3
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -13,8 +15,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .intro {
     border-radius: 15px;
-    background-color: #e6f5f5;
-    box-shadow: 15px 15px var(--dark_red);
+    background-color: var(--light_orange);
+    box-shadow: 15px 15px var(--rich_blue);
 
     padding: 10px;
     padding-left: 20px;
@@ -34,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .intro a:hover {
-    color: var(--dark_red);
+    color: var(--rich_blue);
 }
 
 * {
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .line-in-middle {
-    background: linear-gradient(#C9CBA3, #C9CBA3) no-repeat center/10px 100%;
+    background: linear-gradient(var(--light_green), var(--light_green)) no-repeat center/10px 100%;
 	}
 
 .spacer {
@@ -54,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .timeline_label {
-    background-color: #C9CBA3;
+    background-color: var(--light_green);
     height: 10px;
     text-align: center;
     max-width: 150px;
@@ -88,8 +90,8 @@ a:hover {
     padding-right: 20px;
     border-radius: 15px;
     font-size: 17px;
-    background-color: #e6f5f5;
-    box-shadow: 15px 15px #f18805;
+    background-color: var(--light_orange);
+    box-shadow: 15px 15px var(--rich_blue); /*#f18805;*/
     line-height: 26pt;
 }
 
@@ -100,8 +102,8 @@ a:hover {
     padding-right: 20px;
     border-radius: 15px;
     font-size: 17px;
-    background-color: #e6f5f5;
-    box-shadow: 15px 15px #FFE1A8;
+    background-color: var(--light_orange);
+    box-shadow: 15px 15px var(--light_gray);
     line-height: 26pt;
 }
 
@@ -112,7 +114,7 @@ a:hover {
 }
 
 .project a:hover {
-    color: var(--dark_red);
+    color: var(--rich_blue);
     font-weight: 700;
     text-decoration: none;
 }
@@ -123,17 +125,17 @@ a:hover {
 }
 
 .job a:hover {
-    color: var(--dark_red);
+    color: var(--rich_blue);
     font-weight: 700;
     text-decoration: none;
 }
 
 /* .project h4 {
-    color: var(--dark_red);
+    color: var(--rich_blue);
 }
 
 .project h3 {
-    color: var(--dark_red);
+    color: var(--rich_blue);
 } */
 
 /* Safari 4.0 - 8.0 */

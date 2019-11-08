@@ -1,17 +1,18 @@
 
 :root {
-  --accent_color: #7FB285;
-  --project_color: #FFE1A8;
+  --green: #45523a;
+  --light_orange: #fff5e3;
   --dark_gray: #424242;
-  --light_gray: #999999
+  --light_gray: #999999;
+  --rich_blue: #487fa1;
+  --light_blue: #A4B5BF;
+  --light_green: #C9CBA3;
+  --white: #ffffff
 }
+
 
 h1, h2, h3, h4, h5, h6, p {
     color: #424242;
-}
-
-footer.p {
-    font-size: 10px;
 }
 
 * {
@@ -26,7 +27,7 @@ footer.p {
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 5px;
-    background-color: #FFFFFF /*#FEFEFF;*/
+    background-color: var(--white)
 }
 
 /* Header/Blog Title */
@@ -35,7 +36,7 @@ body {
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: left;
-    background: var(--accent_color);
+    background: var(--green);
     font-size: 16px;
     line-height: 20pt;
     position: fixed;
@@ -51,16 +52,25 @@ body {
 }
 
 .header h1 {
-    color: #FFE1A8;
+    color: var(--light_orange);
 }
 
-a {
-  color: #FFFFFF;
+.header h2 {
+    font-size: 16;
+}
+
+.header h1 a {
+  color: var(--light_orange);
   text-decoration: none;
 }
 
-a:hover {
-  color: #FFE1A8;
+.header h2 a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header h2 a:hover {
+  color: var(--light_gray);
 }
 
 .main_home {
@@ -74,8 +84,8 @@ a:hover {
     padding-right: 20px;
     border-radius: 15px;
     font-size: 17px;
-    background-color: #e6f5f5;
-    box-shadow: 15px 15px #FFE1A8;
+    background-color: var(--light_orange);
+    box-shadow: 15px 15px var(--light_gray);
     line-height: 30pt;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -83,7 +93,7 @@ a:hover {
 }
 
 .aboutimg {
-    box-shadow: 15px 15px #E26D5C;
+    box-shadow: 15px 15px var(--rich_blue);
 }
 
 .about img {
@@ -105,7 +115,7 @@ a:hover {
 }
 
 .about a:hover {
-    color: #E26D5C;
+    color: var(--rich_blue);
     font-weight: 700;
     text-decoration: none;
 }
@@ -147,20 +157,21 @@ a:hover {
 .footer {
     padding: 1px;
     text-align: center;
-    background: var(--accent_color);
-    margin-top: 30px;
+    background: var(--green);
+    margin-top: 40px;
     bottom: -30px;
     width: 100%;
-    box-shadow: 0 50vh 0vh 50vh var(--accent_color);
+    box-shadow: 0 50vh 0vh 50vh var(--green);
 }
 
 .footer a {
-  color: var(--dark_gray);
+  color: var(--white);
+  font-size: 14px;
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #FFFFFF;
+  color: var(--light_gray);
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
