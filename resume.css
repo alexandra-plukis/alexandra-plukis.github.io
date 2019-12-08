@@ -22,10 +22,11 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 20px;
     padding-right: 20px;
 
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
+    margin-top: 100px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    width: 50%;
     justify-content: center;
     line-height: 26pt;
     font-size: 15px;
@@ -35,8 +36,18 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--dark_gray);
 }
 
-.intro a:hover {
-    color: var(--rich_blue);
+.intro:hover {
+    margin-top: 115px;
+    margin-right: 24%;
+    margin-left: 26%;
+    margin-bottom: 0px;
+
+    background-color: var(--rich_blue);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.intro:hover h2 {
+    color: var(--light_orange);
 }
 
 * {
@@ -71,7 +82,7 @@ body {
 }
 
 .main_resume {
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 a {
