@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 .intro {
     border-radius: 15px;
     background-color: var(--light_orange);
-    box-shadow: 15px 15px var(--rich_blue);
+    box-shadow: 10px 10px var(--rich_blue);
 
     padding: 10px;
     padding-left: 20px;
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 25%;
     margin-left: 25%;
     margin-bottom: 15px;
-    width: 50%;
+    max-width: 50%;
     justify-content: center;
     line-height: 26pt;
     font-size: 15px;
@@ -81,17 +81,9 @@ body {
     background-color: #FEFEFF;
 }
 
-.main_resume {
-    /* margin-top: 80px; */
-}
-
 a {
   color: var(--dark_grey);
   text-decoration: none;
-}
-
-a:hover {
-  color: #FEFEFF;
 }
 
 .project {
@@ -102,7 +94,7 @@ a:hover {
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--light_orange);
-    box-shadow: 15px 15px var(--rich_blue); /*#f18805;*/
+    box-shadow: 10px 10px var(--rich_blue); /*#f18805;*/
     line-height: 26pt;
 }
 
@@ -114,7 +106,7 @@ a:hover {
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--light_orange);
-    box-shadow: 15px 15px var(--light_gray);
+    box-shadow: 10px 10px var(--light_gray);
     line-height: 26pt;
 }
 
@@ -208,9 +200,5 @@ a:hover {
   }
   .timeline_r {
     animation-duration: 0s;
-  }
-  .intro
-  {
-    width: 90%;
   }
 }

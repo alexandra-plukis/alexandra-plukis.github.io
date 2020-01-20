@@ -12,7 +12,7 @@
 
 
 h1, h2, h3, h4, h5, h6, p {
-    color: #424242;
+    color: --var(--dark_gray);
 }
 
 * {
@@ -44,7 +44,7 @@ body {
     z-index: 2;
     width: 105%;
     margin-left: -20px;
-}
+    }
 
 
 .header h1, h2, h3, h4 {
@@ -85,7 +85,7 @@ body {
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--light_orange);
-    box-shadow: 15px 15px var(--light_gray);
+    box-shadow: 10px 10px var(--light_gray);
     line-height: 30pt;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -93,7 +93,7 @@ body {
 }
 
 .aboutimg {
-    box-shadow: 15px 15px var(--rich_blue);
+    box-shadow: 10px 10px var(--rich_blue);
 }
 
 .about img {
@@ -102,7 +102,7 @@ body {
     margin-right: auto;
 }
 
-.about h2 {
+.about h2, h3{
     display: grid;
     justify-content: left;
     line-height: 15px;
@@ -140,6 +140,13 @@ body {
     border-radius: 30px;
     margin-left: 2%;
 }
+
+/* when list comes after a paragraph element */
+p + ul {
+    margin-top: -22px;
+    line-height: 1.7;
+}
+
 .columnr
 {
     float: right;
