@@ -44,14 +44,14 @@ body {
     z-index: 2;
     width: 105%;
     margin-left: -20px;
-    }
+}
 
 
 .header h1, h2, h3, h4 {
     display: inline;
 }
 
-.header h1 {
+.header, .s h1 {
     color: var(--light_orange);
 }
 
@@ -71,6 +71,14 @@ body {
 
 .header h2 a:hover {
   color: var(--light_gray);
+}
+
+.lg-view {
+   display:inline-block;
+}
+
+.sm-view {
+   display:none;
 }
 
 .main_home {
@@ -147,10 +155,10 @@ p + ul {
     line-height: 1.7;
 }
 
-.columnr
-{
+.columnr {
     float: right;
     width: 40%;
+    border-radius: 30px;
     margin-right: 2%;
 }
 
@@ -165,7 +173,7 @@ p + ul {
     padding: 1px;
     text-align: center;
     background: var(--green);
-    margin-top: 40px;
+    margin-top: 200px;
     bottom: -30px;
     width: 100%;
     box-shadow: 0 50vh 0vh 50vh var(--green);
@@ -181,8 +189,13 @@ p + ul {
   color: var(--light_gray);
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 800px) {
+/* Responsive layout - when the screen is less than 800px wide:
+- make the two columns stack on top of each other instead of next to each other
+- Make the header smaller
+- make footer a little closer to the text
+*/
+@media screen and (max-width: 700px) {
+    /* floating columns */
   .columnl, .columnr {
     width: 97%;
     padding: 0px;
@@ -191,15 +204,39 @@ p + ul {
   }
   .columnl {
     margin-left: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
+    margin-top: 15px;
   }
   .columnr {
     margin-right: 1.5%;
-    margin-top: 20px;
-    animation-duration: 0s;
+    margin-top: 15px;
   }
   .intro {
     width: 90%;
   }
+
+  /* header  */
+  .header {
+      font-size: 14px;
+      line-height: 16pt;
+  }
+
+  /* .columnl, .columnr h2 {
+      font-size: 16px;
+  } */
+
+  .about h2 {
+      font-size: 19px;
+  }
+
+  .about p, ul {
+      font-size: 16px;
+  }
+
+  .lg-view{
+       display:none;
+   }
+
+    .sm-view{
+       display:inline-block;
+   }
 }

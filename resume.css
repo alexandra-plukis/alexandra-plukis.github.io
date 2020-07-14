@@ -183,8 +183,8 @@ a {
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 900px) {
+/* Responsive layout - when the screen is less than 900px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
   .timeline_l, .timeline_r {
     width: 93%;
     margin: 0px;
