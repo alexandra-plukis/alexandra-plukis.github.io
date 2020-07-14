@@ -220,12 +220,8 @@ p + ul {
       line-height: 16pt;
   }
 
-  /* .columnl, .columnr h2 {
-      font-size: 16px;
-  } */
-
   .about h2 {
-      font-size: 19px;
+      font-size: 22px;
   }
 
   .about p, ul {
@@ -238,5 +234,9 @@ p + ul {
 
     .sm-view{
        display:inline-block;
+   }
+
+   .footer {
+       margin-top: 50px;
    }
 }
