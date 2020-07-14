@@ -199,14 +199,15 @@ a {
   }
 
   .intro {
-      margin-right: 15%;
-      margin-left: 15%;
-      max-width: 70%;
+      margin-right: 10%;
+      margin-left: 10%;
+      max-width: 80%;
   }
 
   .intro:hover {
-      margin-right: 14%;
-      margin-left: 16%;
+      margin-top: 115px;
+      margin-right: 9%;
+      margin-left: 11%;
   }
 
 }
