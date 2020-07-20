@@ -110,7 +110,11 @@ a {
     line-height: 26pt;
 }
 
-.job, .project h3 {
+.job h3 {
+    line-height: 29pt;
+}
+
+.project h3 {
     line-height: 29pt;
 }
 
@@ -190,12 +194,6 @@ a {
     padding: 0px;
     padding-right: 18px;
     padding-left: 18px;
-  }
-  .timeline_l {
-    animation-duration: 0s;
-  }
-  .timeline_r {
-    animation-duration: 0s;
   }
 
   .intro {
