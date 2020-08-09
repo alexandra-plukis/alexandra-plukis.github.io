@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p {
 .intro {
     border-radius: 15px;
     background-color: var(--light_orange);
-    box-shadow: 10px 10px var(--rich_blue);
 
     padding: 10px;
     padding-left: 20px;
@@ -43,7 +42,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0px;
 
     background-color: var(--rich_blue);
-    box-shadow: 0px 0px 0px 0px;
 }
 
 .intro:hover h2 {
@@ -94,7 +92,6 @@ a {
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--light_orange);
-    box-shadow: 10px 10px var(--rich_blue); /*#f18805;*/
     line-height: 26pt;
 }
 
@@ -106,7 +103,6 @@ a {
     border-radius: 15px;
     font-size: 17px;
     background-color: var(--light_orange);
-    box-shadow: 10px 10px var(--light_gray);
     line-height: 26pt;
 }
 
