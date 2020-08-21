@@ -2,33 +2,31 @@
 :root {
   --green: #45523a;
   --light_orange: #fff5e3;
-  --dark_gray: #424242;
+  --dark_gray: #273043;
   --light_gray: #999999;
   --rich_blue: #487fa1;
   --light_blue: #A4B5BF;
   --light_green: #C9CBA3
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    color: var(--dark_grey);
+.intro h2 {
+    color: var(--newColor);
 }
 
 .intro {
     border-radius: 15px;
     background-color: var(--light_orange);
-    box-shadow: 15px 15px var(--rich_blue);
 
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px;
 
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    justify-content: center;
-    line-height: 26pt;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    max-width: 80%;
+    height: 115px;
     font-size: 15px;
+    text-align: center;
 }
 
 * {
@@ -47,22 +45,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 900px) {
-  .timeline_l, .timeline_r {
-    width: 93%;
-    margin: 0px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0px;
-    padding-right: 18px;
-    padding-left: 18px;
-  }
-  .timeline_l {
-    animation-duration: 0s;
-  }
-  .timeline_r {
-    animation-duration: 0s;
-  }
+
   .intro
   {
     width: 90%;

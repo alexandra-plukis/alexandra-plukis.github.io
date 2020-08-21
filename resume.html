@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="resume.css">
 <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="57x57" href="favicons.ico/apple-icon-57x57.png"type="image/x-icon" >
 <link rel="apple-touch-icon" sizes="60x60" href="favicons.ico/apple-icon-60x60.png"type="image/x-icon" >
@@ -32,61 +33,78 @@
 <html>
 
 <div class="header">
-    <h1>
         <span class="lg-view">
-            <a href="index.html">&nbsp;Alexandra Plukis</a>
+            <a href="index.html">
+                <img src="sigNonHover.png"
+                onmouseover="this.src='sigHover.png'"
+                onmouseout="this.src='sigNonHover.png'"
+                width="225" height="100" alt=""/>
+            </a>
         </span>
         <span class="sm-view">
+            <h1>
             <a href="index.html">&nbsp;AMP</a>
+            </h1>
         </span>
-    </h1>
     <h2>
-      <a href="resume.html">&nbsp;&nbsp;&nbsp;resume</a>
+      <a href="resume.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resume</a>
     </h2>
-    <!-- <h2>
-        <a href="blog.html">&nbsp;blog</a>
-    </h2> -->
+    <h2>
+        <a href="blog.html">&nbsp;&nbsp;&nbsp;blog</a>
+    </h2>
 </div>
 
-<div class = "main_resume">
-    <a href="resume.pdf" download target="_blank">
-    <div class = "intro">
-        <h2>
-                Click here to if you want to download my resume. Otherwise, here's a summary!
-        </h2>
-    </div>
-    </a>
+
+<div class = "intro">
+    <h2>
+        <a href="resume.pdf" download target="_blank">
+                Click here if you want to download my resume. Otherwise, here's a summary!
+        </a>
+    </h2>
 </div>
+
 
     <div class = "spacer"> </div>
     <div class = "spacer"> </div>
     <div class= "timeline line-in-middle">
         <div class= "timeline_label"></div>
         <div class="row">
+            <div class = "timeline_r job">
+                <p>
+                    <h3>Software Engineering Intern @ Apple:</h3> <h4>June 2020 - August 2020 </h4>
+                    <br>
+                    Over this past summer, I worked as a software engineering intern in Health. I had the opportunity to develop native iOS code that dealt with health using Swift and Xcode. I was able to work on my project through all stages of development: research, definition, design, and implementation. I loved being able to work on conceptual designs for visualizations and work through and see them executed!
+                </p>
+            </div>
+            <div class = "spacer"> </div>
             <div class = "timeline_l job">
                 <p>
-                    <h3>Peer Mentor @ ASU:&nbsp;</h3> <h4>August 2019 - July 2020 //</h4>
+                    <h3>Peer Mentor @ ASU:&nbsp;</h3> <h4>August 2019 - July 2020 </h4>
+                    <br>
                     As a <a href= "https://engineering.asu.edu/livehere/" target = "blank">residential hall peer mentor</a>, I support first-year engineering students in academics. This includes advising them about courses, helping with scheduling, and connecting them with resources on campus. Apart from personal interactions with students, I organize technical workshops as well as more casual educational events.
                 </p>
             </div>
             <div class = "spacer"> </div>
-            <div class = "timeline_r project">
+            <div class = "timeline_r job">
                 <p>
-                    <h3>NSF REU Research Intern @ George Mason University:</h3> <h4>June 2019 - August 2019 //</h4>
+                    <h3>REU Intern @ George Mason University:</h3> <h4>June 2019 - August 2019 </h4>
+                    <br>
                     Over the summer, I had the opportunity to take part in an NSF Research Experience for Undergraduates (REU). I researched educational data mining topics under Dr. Huzefa Rangwala at George Mason University with my partner Anlan Du. We conducted research into the connections between professor and course ratings and student success metrics such as grades and graduation rates over the course of 10 weeks--you can find drafts of our paper and weekly summaries <a href= "https://sites.google.com/asu.edu/reu2019/home?authuser=1" target = "blank">here</a>!
                 </p>
             </div>
             <div class = "spacer"> </div>
             <div class = "timeline_l job">
                 <p>
-                    <h3>Engineering Futures Mentor @ ASU:</h3> <h4>August 2019 - Present //</h4>
-                    Engineering Futures is an NSF-funded program that provides social and academic supports to first-year engineering students, especially first-generation college students and minorities in STEM. <a href= "https://includes.engineering.asu.edu/2019/09/alexandra-plukis/" target="blank">In this role</a>, I individually met with my 20 assigned mentees each month, <a href= "https://yourfuture.engineering.asu.edu/events/" target = "blank">planned events</a> with a rotating group, and began a series on iOS development in Swift/Xcode that I'm continuing this semester.
+                    <h3>Engineering Futures Mentor @ ASU:</h3> <h4>August 2019 - Present </h4>
+                    <br>
+                    Engineering Futures is an NSF funded program that provides social and academic supports to first-year engineering students, especially first-generation college students and minorities in STEM. <a href= "https://includes.engineering.asu.edu/2019/09/alexandra-plukis/" target="blank">In this role</a>, I individually met with my 20 assigned mentees each month, <a href= "https://yourfuture.engineering.asu.edu/events/" target = "blank">planned events</a> with a rotating group, and began a series on iOS development in Swift/Xcode that I'm continuing this semester.
                 </p>
             </div>
             <div class = "spacer"> </div>
-            <div class = "timeline_r project">
+            <div class = "timeline_r job">
                 <p>
-                    <h3>Research Assistant @ ASU:</h3> <h4>October 2019 - May 2019 //</h4>
+                    <h3>Research Assistant @ ASU:</h3> <h4>October 2019 - May 2019 </h4>
+                    <br>
                     This research rests upon the intersection of sustainability and protein quality--a measure of the amino acids in a food and how well humans can absorb them. It makes heavy use of life cycle analysis, which quantifies the environmental impact of a food or product over the span of its existance. My role in this project was researching the protein sources used, gathering the nutritional contents of these foods, and contributing to the algorithm for balancing the sustainability of foods with their protein quality.
                     <br>
                     <a href = "https://www.mdpi.com/2071-1050/11/10/2747" target = "blank">View the publication here!</a>
@@ -97,20 +115,9 @@
         <div class = "spacer"> </div>
         <div class= "timeline_label"></div>
     </div>
+    <div class = "spacer"> </div>
 </div>
 
-
-<div class="footer">
-    <p>
-        <a href= "https://www.linkedin.com/in/alexandra-plukis/">
-            <img src="linkedin.png" alt="LinkedIn Logo" height="16" width="16">
-        <a href= "https://www.linkedin.com/in/alexandra-plukis/"> </a>
-        &emsp;
-        <a href= "https://www.github.com/alexandra-plukis/">
-            <img src="github.png" alt="Github Logo" height="16" width="16">
-        </a>
-    </p>
-</div>
 
 </body>
 </html>

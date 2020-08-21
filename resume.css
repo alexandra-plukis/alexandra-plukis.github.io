@@ -2,15 +2,25 @@
 :root {
   --green: #45523a;
   --light_orange: #fff5e3;
-  --dark_gray: #424242;
+  --dark_gray: #273043;
   --light_gray: #999999;
   --rich_blue: #487fa1;
   --light_blue: #A4B5BF;
-  --light_green: #C9CBA3
+  --light_green: #C9CBA3;
+  --white: #ffffff;
+  --newColor: #eb6746;
+  --newSecondaryColor: #BA2612;
+  --newTertiarycolor: #6A8EAE;
+  --newHoverColor: #F8EA9B;
+  --newBoxColor: #fbebcf
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    color: var(--dark_grey);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    padding: 5px;
+    background-color: var(--newColor)
 }
 
 .intro {
@@ -21,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 20px;
     padding-right: 20px;
 
-    margin-top: 100px;
+    margin-top: 5%;
     margin-right: 25%;
     margin-left: 25%;
     margin-bottom: 15px;
@@ -31,21 +41,14 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 15px;
 }
 
-.intro a {
-    color: var(--dark_gray);
+.intro h2 a {
+    color: var(--newColor);
+    text-decoration: none;
 }
 
-.intro:hover {
-    margin-top: 115px;
-    margin-right: 24%;
-    margin-left: 26%;
-    margin-bottom: 0px;
-
-    background-color: var(--rich_blue);
-}
-
-.intro:hover h2 {
-    color: var(--light_orange);
+.intro h2 a:hover {
+    color: var(--newSecondaryColor);
+    text-decoration: none;
 }
 
 * {
@@ -79,22 +82,6 @@ body {
     background-color: #FEFEFF;
 }
 
-a {
-  color: var(--dark_grey);
-  text-decoration: none;
-}
-
-.project {
-    justify-content: center;
-    min-height: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    font-size: 17px;
-    background-color: var(--light_orange);
-    line-height: 26pt;
-}
-
 .job {
     justify-content: center;
     min-height: 150px;
@@ -108,44 +95,32 @@ a {
 
 .job h3 {
     line-height: 29pt;
+    color: var(--newColor)
 }
 
-.project h3 {
-    line-height: 29pt;
+.job h4 {
+    color: var(--newSecondaryColor)
 }
 
-.project a {
-    color: #2e2e2e;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.project a:hover {
-    color: var(--rich_blue);
-    font-weight: 700;
-    text-decoration: none;
-}
 .job a {
-    color: #2e2e2e;
-    font-weight: 700;
-    text-decoration: none;
+    color: var(--dark_gray);
+    text-decoration: underline;
 }
 
 .job a:hover {
-    color: var(--rich_blue);
-    font-weight: 700;
-    text-decoration: none;
+    color: var(--newSecondaryColor);
+    text-decoration: underline;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymovel {
-  from {margin-left: 0%;}
-  to {margin-left: 40%;}
+  from {margin-left: 0wh;}
+  to {margin-left: 40wh;}
 }
 
 @-webkit-keyframes mymover {
-  from {margin-right: 0%;}
-  to {margin-right: 40%;}
+  from {margin-right: 0wh;}
+  to {margin-right: 40wh;}
 }
 
 
@@ -157,7 +132,7 @@ a {
     margin-top: 30px;
     margin-left: 40%;
     animation-name: mymovel;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 .timeline_r
@@ -167,7 +142,7 @@ a {
     margin-top: 30px;
     margin-right: 40%;
     animation-name: mymover;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
@@ -180,28 +155,23 @@ a {
 
 
 /* Responsive layout - when the screen is less than 900px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .timeline_l, .timeline_r {
-    width: 93%;
+    width: 94%;
     margin: 0px;
     margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 0px;
     padding-right: 18px;
     padding-left: 18px;
+    animation-name: none;
   }
-
   .intro {
+      margin-top: 5%;
       margin-right: 10%;
       margin-left: 10%;
+      margin-bottom: 15px;
       max-width: 80%;
   }
-
-  .intro:hover {
-      margin-top: 115px;
-      margin-right: 9%;
-      margin-left: 11%;
-  }
-
 }
