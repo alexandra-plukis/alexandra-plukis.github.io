@@ -93,6 +93,10 @@ body {
     line-height: 26pt;
 }
 
+.job {
+    color: var(--dark_gray);
+}
+
 .job h3 {
     line-height: 29pt;
     color: var(--newColor)
@@ -106,6 +110,7 @@ body {
     color: var(--dark_gray);
     text-decoration: underline;
 }
+
 
 .job a:hover {
     color: var(--newSecondaryColor);
