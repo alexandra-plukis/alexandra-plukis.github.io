@@ -1,0 +1,112 @@
+
+:root {
+    --background: #fcf2e3;
+    --link_plain: #5E8C61;
+    --link_hover: #F4D35E;
+    --default_text: #484a47;
+    --blog_menu_link_plain: #F45B69;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--default_text);
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header/Blog Title */
+
+.header {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background-color: var(--background);
+    top: 0px;
+    height: 10vh;
+    line-height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.header h1, h2, h3, h4 {
+    display: inline;
+}
+
+.header {
+    color: var(--link_plain);
+    min-height: 10vh;
+}
+
+.header h1 {
+    font-size: 35pt;
+}
+.header h2 {
+    font-size: 14pt;
+}
+
+.header h1 a {
+  color: var(--link_plain);
+  text-decoration: none;
+}
+
+.header h1 a:hover {
+  color: var(--link_hover);
+  text-decoration: none;
+}
+
+.header h2 a {
+  color: var(--link_plain);
+  text-decoration: none;
+}
+
+.header h2 a:hover {
+  color: var(--link_hover);
+  text-decoration: none;
+}
+
+/* generic content styling */
+
+.main_home {
+    margin-top: 5px;
+    padding-left: 20px;
+    width: 80%;
+    font-size: 14pt;
+}
+
+a {
+  color: var(--link_plain);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link_hover);
+  text-decoration: underline;
+}
+
+/* blog */
+
+.blog_menu h5 {
+    padding-left: 5vw;
+}
+
+.blog_post {
+    padding-left: 10vw;
+    width: 80vw;
+}
+
+.paragraph {
+    padding-top: 3vh;
+    font-size: 10pt;
+    line-height: 20pt;
+}
+
+/* custom spacers. hell yeah. */
+
+.space40 {
+    height: 45vh;
+}
+
+.space5 {
+    height: 5vh;
+}
