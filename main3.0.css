@@ -1,20 +1,11 @@
 
 :root {
-  --green: #45523a;
-  --light_orange: #fff5e3;
-  --dark_gray: #273043;
-  --light_gray: #999999;
-  --rich_blue: #487fa1;
-  --light_blue: #A4B5BF;
-  --light_green: #C9CBA3;
-  --white: #ffffff;
-  --newColor: #eb6746;
-  /* --newColor: #F4B886; */
-  --newSecondaryColor: #BA2612;
-  /* --newSecondaryColor: #273043; */
-  --newTertiarycolor: #6A8EAE;
-  --newHoverColor: #F8EA9B;
-  --newBoxColor: #fbebcf
+  --dark_gray: #484a47;
+  --deep_teal: #5c6d70;
+  --brown: #a37774;
+  --brick: #e88873;
+  --beige: #e0ac9d;
+  --cream: #fcf2e3;
 }
 
 * {
@@ -25,7 +16,7 @@ body {
     font-family: 'Poppins', sans-serif;
 
     padding: 5px;
-    background-color: var(--newColor)
+    background-color: var(--cream)
 }
 
 /* Header/Blog Title */
