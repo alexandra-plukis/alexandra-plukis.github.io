@@ -1,30 +1,27 @@
 
 :root {
-  --dark_gray: #484a47;
-  --deep_teal: #5c6d70;
-  --brown: #a37774;
-  --brick: #e88873;
-  --beige: #e0ac9d;
-  --cream: #fcf2e3;
-}
-
-* {
-  box-sizing: border-box;
+    --background: #fcf2e3;
+    --link_plain: #5E8C61;
+    --link_hover: #F4D35E;
+    --default_text: #484a47;
+    --blog_menu_link_plain: #F45B69;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-
-    padding: 5px;
-    background-color: var(--cream)
+    color: var(--default_text);
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
 }
 
 /* Header/Blog Title */
+
 .header {
     padding-bottom: 0px;
     padding-left: 10px;
     text-align: left;
-    background: var(--newColor);
+    background-color: var(--background);
     top: 0px;
     height: 10vh;
     line-height: 50px;
@@ -36,12 +33,8 @@ body {
     display: inline;
 }
 
-.space5 {
-    height: 5vh;
-}
-
 .header {
-    color: var(--light_orange);
+    color: var(--link_plain);
     min-height: 10vh;
 }
 
@@ -52,163 +45,68 @@ body {
     font-size: 14pt;
 }
 
-
 .header h1 a {
-  color: var(--light_orange);
+  color: var(--link_plain);
   text-decoration: none;
 }
 
 .header h1 a:hover {
-  color: var(--light_orange);
+  color: var(--link_hover);
   text-decoration: none;
 }
 
 .header h2 a {
-  color: var(--light_orange);
+  color: var(--link_plain);
   text-decoration: none;
 }
 
 .header h2 a:hover {
-  color: var(--newHoverColor);
+  color: var(--link_hover);
   text-decoration: none;
 }
 
-.lg-view {
-   display: inline-block;
-}
-
-.sm-view {
-   display:none;
-}
+/* generic content styling */
 
 .main_home {
     margin-top: 5px;
     padding-left: 20px;
     width: 80%;
-    height: 40vh;
     font-size: 14pt;
-    color: var(--light_orange)
 }
 
-.main_home h2 a {
-  color: var(--light_orange);
+a {
+  color: var(--link_plain);
   text-decoration: underline;
 }
 
-.main_home h2 a:hover {
-  color: var(--newHoverColor);
+a:hover {
+  color: var(--link_hover);
   text-decoration: underline;
 }
 
-.main_navigation {
-    margin-top: 5px;
-    padding-left: 20px;
-    text-align: center;
+/* blog */
 
-}
-
-.image {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 25%;
-    float: left;
+.blog_menu h5 {
+    padding-left: 5vw;
 }
 
-.specialspacer {
-    min-height: 20vh;
+.blog_post {
+    padding-left: 10vw;
+    width: 80vw;
 }
-.where_title {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    bottom: 10vh;
-    text-align: center;
-    color: var(--light_orange)
+
+.paragraph {
+    padding-top: 3vh;
+    font-size: 10pt;
+    line-height: 20pt;
 }
+
+/* custom spacers. hell yeah. */
 
 .space40 {
     height: 45vh;
 }
 
-.navigation {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 97%;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymovel {
-  from {margin-left: 0%;}
-  to {margin-left: 40%;}
-}
-
-@-webkit-keyframes mymover {
-  from {margin-right: 0%;}
-  to {margin-right: 40%;}
-}
-
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.columnl {
-    float: left;
-    width: 20%;
-    margin-left: 2%;
-}
-
-/* when list comes after a paragraph element */
-p + ul {
-    margin-top: -22px;
-    line-height: 1.7;
-}
-
-.columnr {
-    float: right;
-    width: 75%;
-    text-align: left;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.footer {
-    padding: 1px;
-    text-align: center;
-    background: var(--newColor);
-    margin-top: 200px;
-    bottom: -30px;
-    width: 100%;
-    box-shadow: 0 50vh 0vh 50vh var(--newColor);
-}
-
-@media screen and (max-width: 800px) {
-    .header {
-        top: 50px;
-        height: 5vh;
-    }
-
-    .lg-view{
-       display:none;
-    }
-
-    .sm-view{
-       display:inline-block;
-    }
-
-    .main_home {
-        font-size: 12pt;
-        width: 90%;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .where_title {
-        display: none;
-    }
+.space5 {
+    height: 5vh;
 }
