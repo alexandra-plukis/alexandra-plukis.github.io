@@ -95,8 +95,8 @@ a:hover {
 }
 
 .blog_post {
-    padding-left: 10vw;
-    width: 80vw;
+    margin: auto;
+    width: 80%;
 }
 
 .paragraph {
